@@ -1,0 +1,9 @@
+.list_item{
+    border: 1px solid black;
+    display: block;
+    padding: 0.5rem 0rem;
+}
+
+.list_item h3{
+    margin: 0px;
+}

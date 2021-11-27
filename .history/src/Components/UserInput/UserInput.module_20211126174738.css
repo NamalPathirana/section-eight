@@ -1,0 +1,40 @@
+.frame{
+    margin: 0.5rem 0.5rem;
+    padding: 1.2rem 1.2rem;
+    width: 35rem;
+    max-width: 90%;
+    margin: 3rem auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.inValid{
+    color: red;
+    background-color: rgb(233, 161, 161);
+}
+
+.inValid input{
+   background-color: rgb(233, 161, 161);
+   border-color: red;
+}
+
+.frame input{
+    display: block;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    line-height: 1.5rem;
+    padding: 100 0.25rm;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.frame input:hover{
+    border: 1px solid rgb(49, 45, 45);
+}
+
+.frame label{
+    display: block;
+    align-content: flex-start;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}

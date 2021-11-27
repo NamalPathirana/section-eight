@@ -1,0 +1,7 @@
+.frame{
+    margin: 0.5rem 0;
+}
+
+.frame input{
+    display: block;
+}

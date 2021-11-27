@@ -1,0 +1,23 @@
+.frame{
+  
+    width: 35rem;
+    max-width: 90%;
+    margin: 3rem auto;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.frame input{
+    display: block;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    line-height: 1.5rem;
+    padding: 100 0.25rm;
+}
+
+.frame label{
+    display: block;
+    align-content: flex-start;
+    font-weight: bold;
+}

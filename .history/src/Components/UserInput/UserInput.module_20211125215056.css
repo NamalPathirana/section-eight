@@ -1,0 +1,16 @@
+.frame{
+    margin: 0.5rem 0.5rem;
+    padding: 1.2rem 0.5rem;
+    width: 35rem;
+    max-width: 90%;
+    margin: 3rem auto;
+    background-color: aqua;
+}
+
+.frame input{
+    display: block;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    line-height: 1.5rem;
+    padding: 100 0.25rm;
+}

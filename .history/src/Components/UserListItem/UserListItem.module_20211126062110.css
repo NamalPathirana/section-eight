@@ -1,0 +1,20 @@
+.list_item{
+    border: 1px solid gray;
+    display: block;
+    padding: 0.5rem 0.3rem;
+    margin: 3px 0px;
+
+}
+
+.list_item:hover{
+    background-color: antiquewhite;
+}
+
+.list_item:active{
+    background-color: red;
+}
+
+
+.list_item h3{
+    margin: 0px;
+}

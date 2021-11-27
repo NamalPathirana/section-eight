@@ -1,0 +1,11 @@
+.frame{
+    margin: 0.5rem 0;
+}
+
+.frame input{
+    display: block;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    line-height: 1.5rem;
+    padding: 100 0.25rm;
+}

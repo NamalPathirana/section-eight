@@ -1,0 +1,5 @@
+.list_item{
+    border: 1px solid black;
+    display: block;
+    padding: 0.5rem 0rem;
+}
