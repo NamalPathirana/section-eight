@@ -30,13 +30,9 @@ const UserInput = (props) => {
   const FormSubmitHandler = (event) => {
     event.preventDefault();
 
-    if (username.length === 0) {
+    if (username.length === 0 && +age>0) {
       SetIsValid(false);
       return;
-    }
-    if(+age<1){
-        SetIsValid(false);
-        return;
     }
 
     userEntry.key = Math.random();

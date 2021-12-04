@@ -34,10 +34,6 @@ const UserInput = (props) => {
       SetIsValid(false);
       return;
     }
-    if(+age<1){
-        SetIsValid(false);
-        return;
-    }
 
     userEntry.key = Math.random();
     userEntry.name = username;
@@ -61,7 +57,6 @@ const UserInput = (props) => {
             type="text"
             onChange={NameInputHandler}
             className={!isValid ? styles.inValid : ""}
-            value={username}
           />
           <label className={`${!isValid ? styles.inValid : ""}`}>
             Age (Years)
@@ -73,7 +68,6 @@ const UserInput = (props) => {
             maxLength="2"
             min="12"
             onChange={AgeInputHandler}
-            value={age}
             className={`${!isValid ? styles.inValid : ""}`}
           />
           <Button name="Add User" type="submit"></Button>

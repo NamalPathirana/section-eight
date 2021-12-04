@@ -34,10 +34,6 @@ const UserInput = (props) => {
       SetIsValid(false);
       return;
     }
-    if(+age<1){
-        SetIsValid(false);
-        return;
-    }
 
     userEntry.key = Math.random();
     userEntry.name = username;
