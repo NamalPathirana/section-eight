@@ -1,13 +1,3 @@
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
-  z-index: 10;
-}
-
 .modal {
   position: fixed;
   top: 30vh;
@@ -15,12 +5,11 @@
   width: 80%;
   z-index: 100;
   overflow: hidden;
-  padding: 0 !important;
 }
 
 .header {
   background: #4f005f;
-  padding: 1rem;
+  padding: 10rem;
 }
 
 .header h2 {

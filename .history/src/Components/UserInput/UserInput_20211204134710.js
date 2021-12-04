@@ -52,7 +52,7 @@ const UserInput = (props) => {
 
   return (
     <div>
-    <ErrorModal title="An error occurred!" message='SomeThing went wrong*'></ErrorModal>
+    <ErrorModal></ErrorModal>
     <Card>
       <form onSubmit={FormSubmitHandler}>
         <div className={styles.frame}>

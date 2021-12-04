@@ -1,0 +1,13 @@
+import styles from "./ErrorModal.module.css";
+import Card from "../Card/Card";
+
+const ErrorModal = (props) => {
+  return <Card>
+      <header>
+        
+      </header>
+      <h2></h2>
+  </Card>;
+};
+
+export default ErrorModal;
