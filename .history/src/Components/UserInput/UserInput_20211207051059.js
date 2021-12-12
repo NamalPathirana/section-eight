@@ -10,7 +10,7 @@ const UserInput = (props) => {
   const [username, SetUserName] = useState("");
   const [age, SetAge] = useState("");
   const [isValid, SetIsValid] = useState(true);
-  const [error, SetError] = useState();
+  const [error, SetError] = useSate();
 
   const NameInputHandler = (props) => {
     SetUserName(props.target.value);
@@ -34,10 +34,7 @@ const UserInput = (props) => {
 
     if (username.length === 0) {
       SetIsValid(false);
-      SetError({
-        error: "Invalid User Name ",
-        message: "Please enter a valid user name. ",
-      });
+      SetError({ error: "Invalid User Name " , Message:"Please enter a valid user name. "});
       return;
     }
     if (+age < 1) {
@@ -55,17 +52,12 @@ const UserInput = (props) => {
     SetAge("");
   };
 
-  const errorHandler = () =>{
-    SetError(null);
-  }
-
   return (
     <div>
       {
-        error && <ErrorModal
-          title= {error.error}
-          message={error.message}
-          onConfirm={errorHandler}
+        <ErrorModal
+          title="An error occurred!"
+          message="SomeThing went wrong*"
         ></ErrorModal>
       }
       <Card>

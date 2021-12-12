@@ -55,17 +55,12 @@ const UserInput = (props) => {
     SetAge("");
   };
 
-  const errorHandler = () =>{
-    SetError(null);
-  }
-
   return (
     <div>
       {
         error && <ErrorModal
           title= {error.error}
           message={error.message}
-          onConfirm={errorHandler}
         ></ErrorModal>
       }
       <Card>
