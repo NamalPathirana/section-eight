@@ -52,7 +52,7 @@ function App() {
       <section>
       {UserInfoSegment}
       </section>
-    </React.Fragment>
+    </dReact.Fragment iv>
   );
 }
 

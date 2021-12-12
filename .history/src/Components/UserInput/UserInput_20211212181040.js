@@ -38,10 +38,7 @@ const UserInput = (props) => {
 
     console.log('[UserInput.js]...'+'formSubmitHandler '+userRefName.current.value);
 
-    const name = userRefName.current.value;
-    const age = userRefAge.current.value;
-
-    if (name.length === 0) {
+    if (username.length === 0) {
       SetIsValid(false);
       SetError({
         error: "Invalid User Name ",
@@ -60,8 +57,8 @@ const UserInput = (props) => {
 
     props.onUserEntry(userEntry);
 
-    // SetUserName("");
-    // SetAge("");
+    SetUserName("");
+    SetAge("");
   };
 
   const errorHandler = () =>{

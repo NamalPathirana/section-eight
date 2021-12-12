@@ -11,8 +11,8 @@ const UserInput = (props) => {
   const userRefName = useRef();
   const userRefAge = useRef();
 
-  const [username, SetUserName] = useState("");
-  const [age, SetAge] = useState("");
+  // const [username, SetUserName] = useState("");
+  // const [age, SetAge] = useState("");
   const [isValid, SetIsValid] = useState(true);
   const [error, SetError] = useState();
 
@@ -60,8 +60,8 @@ const UserInput = (props) => {
 
     props.onUserEntry(userEntry);
 
-    // SetUserName("");
-    // SetAge("");
+    SetUserName("");
+    SetAge("");
   };
 
   const errorHandler = () =>{

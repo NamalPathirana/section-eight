@@ -9,7 +9,7 @@ const BackDrop = (props) => {
   return <div className={styles.backdrop} onClick={props.onConfirm} />;
 };
 
-const ModalOverlay = (props) => {
+const Overlay = (props) => {
   return (
     <Card className={styles.modal}>
       <header className={styles.header}>
@@ -24,22 +24,14 @@ const ModalOverlay = (props) => {
 };
 
 const ErrorModal = (props) => {
-  return (
-    <React.Fragment>
-      {reactDom.createPortal(
-        <BackDrop onConfirm={props.onConfirm} />,
-        document.getElementById("backdrop-root")
-      )}
-      {reactDom.createPortal(
-        <ModalOverlay 
-        title={props.title}
-        message={props.message}
-        onConfirm={props.onConfirm}
-        />,
-        document.getElementById("overlay-root")
-      )}
-    </React.Fragment>
-  );
+  return <React.Fragment>
+    {
+      reactDom.createPortal(<BackDrop onConfirm={props.onConfirm}/>,document.getElementById('backdrop-root'))
+    }
+    {
+      reactDom.createPortal(<Overlay/>,document.getElementById('overlay-root'))
+    }
+  </React.Fragment>;
 };
 
 export default ErrorModal;

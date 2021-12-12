@@ -1,5 +1,4 @@
 import styles from "./App.module.css";
-import react, { useState } from "react";
 import UserInput from "./Components/UserInput/UserInput";
 import UserList from "./Components/UserList/UserList";
 import Card from "./UI/Card/Card";

@@ -8,9 +8,6 @@ import Wrapper from "../../Helpers/Wrapper";
 const UserInput = (props) => {
   const userEntry = { key: 0, name: "lol", age: "25" };
 
-  const userRefName = useRef();
-  const userRefAge = useRef();
-
   const [username, SetUserName] = useState("");
   const [age, SetAge] = useState("");
   const [isValid, SetIsValid] = useState(true);
@@ -36,12 +33,7 @@ const UserInput = (props) => {
   const FormSubmitHandler = (event) => {
     event.preventDefault();
 
-    console.log('[UserInput.js]...'+'formSubmitHandler '+userRefName.current.value);
-
-    const name = userRefName.current.value;
-    const age = userRefAge.current.value;
-
-    if (name.length === 0) {
+    if (username.length === 0) {
       SetIsValid(false);
       SetError({
         error: "Invalid User Name ",
@@ -60,8 +52,8 @@ const UserInput = (props) => {
 
     props.onUserEntry(userEntry);
 
-    // SetUserName("");
-    // SetAge("");
+    SetUserName("");
+    SetAge("");
   };
 
   const errorHandler = () =>{
@@ -89,7 +81,6 @@ const UserInput = (props) => {
               onChange={NameInputHandler}
               className={!isValid ? styles.inValid : ""}
               value={username}
-              ref={userRefName}
             />
             <label className={`${!isValid ? styles.inValid : ""}`}>
               Age (Years)
@@ -103,7 +94,6 @@ const UserInput = (props) => {
               onChange={AgeInputHandler}
               value={age}
               className={`${!isValid ? styles.inValid : ""}`}
-              ref={userRefAge}
             />
             <Button name="Add User" type="submit"></Button>
           </div>
